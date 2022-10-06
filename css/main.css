@@ -1,0 +1,173 @@
+/* ROOT */
+:root{
+    /* --main-font-family: "Roboto", "Arial", sans-serif; */
+    /* --main-font-weight: 400; */
+    /* --main-body-bg-color: #fff; */
+    /* --main-text-color: #333; */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight);
+    background-color: #fff;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.site-main{
+    flex-grow: 1;
+}
+
+.currency{
+    margin-top: 50px;
+}
+
+.currency-text{
+    margin-bottom: 15px;
+
+    font-size: 46px;
+    text-align: center;
+    color: #000;
+}
+
+.currency-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.currency-box{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+}
+
+.currency-input{
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.currency-select{
+    margin: 0 10px;
+}
+
+.currency-outputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.currency-output{
+    margin-right: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.currency-btn{
+    max-width: 100px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+
+.guess-form{
+    display: flex;
+    align-items: center;
+}
+
+.guess-input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.guess-btn{
+    max-width: 100px;
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+.guess-text{
+    font-size: 20px;
+}
+
+.guess-alert{
+    display: none;
+    width: 100%;
+    margin-top: 25px;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.guess-alert-more{
+    display: block;
+    background-color: skyblue;
+    color: blue;
+}
+
+.guess-alert-less{
+    display: block;
+    background-color: orange;
+    color: black;
+}
+
+.guess-answer{
+    margin-top: 20px;
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+    background-color: blue;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.guess-answer-correct{
+    background-color: green;
+}
+
+.guess-answer-lost{
+    background-color: red;
+}

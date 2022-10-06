@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+
+    <!-- Header start -->
+    <header class="site-header">
+
+    </header>
+    <!-- Header finish -->
+
+    <!-- Main start -->
+    <main class="site-main">
+        <!-- Currency section start  -->
+        <section class="currency">
+            <div class="container">
+                <h2 class="currency-text">
+                    Currency Converter
+                </h2>
+                <form class="currency-form" method="post" id="currency_form">
+                    <div class="currency-box">
+                        <input class="currency-input" name="user_number" id="currency_input" type="number" placeholder="Enter number" required>
+                        <select class="currency-input currency-select" name="user_select_curse" id="currency_select">
+                            <option selected disabled hidden>Select your currency</option>
+                            <option value="10891.39">EURO</option>
+                            <option value="11074.42">USD</option>
+                            <option value="182.97">RUBL</option>
+                            <option value="1556.29">YUAN</option>
+                        </select>
+                        <div class="currency-input currency-outputbox">
+                            <output class="currency-output" type="number" name="currency_uzs" id="currency_output">00</output>
+                            <span class="currency-outputboxtext">so'm</span>
+                        </div>
+                    </div>
+
+                    <button class="currency-btn" type="submit">Convert</button>
+                </form>
+            </div>
+        </section>
+        <!-- Currency section finish  -->
+        
+        <!-- Guess the number section start  -->
+        <section class="guess">
+            <div class="container">
+                <h2 class="currency-text">
+                    Son topish
+                </h2>
+
+                <form class="guess-form" method="post" id="guess_form">
+                    <input class="guess-input" type="number" id="guess_input" name="user_guess_number">
+                    <button class="guess-btn" type="submit" id="guess_btn">Submit</button>
+                </form>
+
+                <p class="guess-text">
+                    Urunishlar soni: <span class="guess-try" id="guess_try"></span>
+                </p>
+
+                <div class="guess-alert" id="guess_alert">
+                    adadadada
+                </div>
+
+                <div class="guess-answer" id="guess_answer">
+                    Raqamni taxmin qiling
+                </div>
+            </div>
+        </section>
+        <!-- Guess the number section finish  -->
+    </main>
+    <!-- Main finish  -->
+
+    <!-- Footer start -->
+    <footer class="site-footer">
+
+    </footer>
+    <!-- Footer finish -->
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
